@@ -78,7 +78,7 @@ body {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #dc3545;
+    background-color: #35dcdc;
     color: white;
     border-radius: 50%;
     padding: 2px 6px;
@@ -86,8 +86,8 @@ body {
 }
 
 .btn-primary {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #35dcdc;
+    border-color: #35dcdc;
 }
 
 .btn-primary:hover {
