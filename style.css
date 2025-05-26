@@ -1,5 +1,5 @@
 body {
-    background-color: #FFE4E1; /* Light pink background */
+    background-color: #e1fffa; /* Light pink background */
 }
 
 .product-card {
@@ -21,7 +21,7 @@ body {
 }
 
 .product-card-body {
-    background-color: #F28B82; /* Darker pink/coral for card info section */
+    background-color: #82e9f2; /* Darker pink/coral for card info section */
     color: white; /* White text */
     padding: 15px;
 }
