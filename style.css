@@ -94,3 +94,12 @@ body {
     background-color: #c82333;
     border-color: #bd2130;
 }
+
+/* New class for 5-column layout */
+.product-col-1-of-5 {
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+    width: 20%; /* 100% / 5 columns = 20% */
+    padding-right: 7.5px; /* Half of Bootstrap's default gutter (15px / 2) */
+    padding-left: 7.5px; /* Half of Bootstrap's default gutter */
+    /* Ensure mb-4 (margin-bottom: 1.5rem) still works as expected */
+}
