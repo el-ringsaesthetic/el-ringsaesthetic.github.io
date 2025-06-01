@@ -1,270 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rings Aesthetic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitipaw Candy Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">El Rings Aesthetic</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showLogin()">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showRegister()">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showCart()">
-                            <i class="fas fa-shopping-cart"></i> Cart
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container mt-4">
-        <div id="loginModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="loginForm">
-                            <div class="mb-3">
-                                <label>Email</label>
-                                <input type="email" class="form-control" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="registerModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Register</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="registerForm">
-                            <div class="mb-3">
-                                <label>Full Name</label>
-                                <input type="text" class="form-control" name="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label>Email</label>
-                                <input type="email" class="form-control" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-        
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Our Products</h2>
-                <div id="products" class="row mt-4">
-                    <!-- Row 1 -->
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_1.jpg" class="card-img-top product-image" alt="Product 1">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 1</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_2.jpg" class="card-img-top product-image" alt="Product 2">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 2</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_3.jpg" class="card-img-top product-image" alt="Product 3">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 3</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_4.jpg" class="card-img-top product-image" alt="Product 4">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 4</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_5.jpg" class="card-img-top product-image" alt="Product 5">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 5</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row 2 -->
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_6.jpg" class="card-img-top product-image" alt="Product 6">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 6</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_7.jpg" class="card-img-top product-image" alt="Product 7">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 7</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_8.jpg" class="card-img-top product-image" alt="Product 8">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 8</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_9.jpg" class="card-img-top product-image" alt="Product 9">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 9</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_10.jpg" class="card-img-top product-image" alt="Product 10">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 10</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row 3 -->
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_11.jpg" class="card-img-top product-image" alt="Product 11">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 11</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_12.jpg" class="card-img-top product-image" alt="Product 12">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 12</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_13.jpg" class="card-img-top product-image" alt="Product 13">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 13</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_14.jpg" class="card-img-top product-image" alt="Product 14">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 14</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-col-1-of-5 mb-4">
-                        <div class="card product-card">
-                            <img src="placeholder/keychain_15.jpg" class="card-img-top product-image" alt="Product 15">
-                            <div class="card-body product-card-body">
-                                <h5 class="card-title">Keychain</h5>
-                                <p class="card-text product-variant">Variant 15</p>
-                                <p class="card-text product-price">IDR 15K</p>
-                                <a href="#" class="add-to-cart-btn">Add Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="title">Pitipaw Candy Collection</h1>
+    <div class="grid-container">
+      <!-- 25 Card -->
+      <div class="card"><img src="./img/cnd.png" alt="Produk 1"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 2"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 3"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 4"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 5"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 6"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 7"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 8"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 9"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 10"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 11"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 12"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 13"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 14"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 15"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 16"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 17"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 18"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 19"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 20"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 21"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 22"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 23"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 24"></div>
+      <div class="card"><img src="./img/cnd.png" alt="Produk 25"></div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-code.js"></script>
-    <script src="app.js"></script>
+  </div>
 </body>
 </html>

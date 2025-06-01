@@ -1,105 +1,40 @@
 body {
-    background-color: #e1fffa; /* Light pink background */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
 }
 
-.product-card {
-    transition: transform 0.2s;
-    margin-bottom: 20px;
-    border: none; /* Remove default card border */
-    border-radius: 15px; /* Rounded corners for the card */
-    overflow: hidden; /* Ensures content respects border-radius */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+.container {
+  padding: 2rem;
+  text-align: center;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
+.title {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 2rem;
 }
 
-.product-image {
-    height: 250px; /* Adjusted height, can be fine-tuned */
-    object-fit: cover;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 card per baris */
+  gap: 20px;
+  justify-items: center;
 }
 
-.product-card-body {
-    background-color: #82e9f2; /* Darker pink/coral for card info section */
-    color: white; /* White text */
-    padding: 15px;
+.card {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  transition: transform 0.3s;
 }
 
-.product-card-body .card-title {
-    font-weight: bold;
-    font-size: 1.25rem; /* Larger title */
-    margin-bottom: 0.5rem;
+.card:hover {
+  transform: scale(1.05);
 }
 
-.product-card-body .product-variant {
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
-}
-
-.product-card-body .product-price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: inline-block; /* To allow button next to it */
-    margin-bottom: 0; /* Remove bottom margin if it's a p tag */
-}
-
-.add-to-cart-btn {
-    background-color: transparent !important; /* Override Bootstrap */
-    border: none !important; /* Override Bootstrap */
-    color: white !important; /* White text */
-    padding: 0 !important; /* Remove padding */
-    float: right; /* Position to the right */
-    text-decoration: none !important;
-    font-size: 1rem; /* Match price or adjust as needed */
-    line-height: 1.5; /* Align vertically with price if it's taller */
-}
-
-.add-to-cart-btn:hover {
-    color: #f0f0f0 !important; /* Slight hover effect for text */
-    text-decoration: underline !important;
-}
-
-.product-card-body::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.cart-icon {
-    position: relative;
-}
-
-.cart-count {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: #35dcdc;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-}
-
-.btn-primary {
-    background-color: #35dcdc;
-    border-color: #35dcdc;
-}
-
-.btn-primary:hover {
-    background-color: #23c5c8;
-    border-color: #23c5c8;
-}
-
-/* New class for 5-column layout */
-.product-col-1-of-5 {
-    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
-    width: 20%; /* 100% / 5 columns = 20% */
-    padding-right: 7.5px; /* Half of Bootstrap's default gutter (15px / 2) */
-    padding-left: 7.5px; /* Half of Bootstrap's default gutter */
-    /* Ensure mb-4 (margin-bottom: 1.5rem) still works as expected */
+.card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 12px;
 }
