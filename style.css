@@ -17,7 +17,7 @@
 }
 /* navbar */
 #navbar {
-  background-color: #e86278;
+  background-color: #f195da;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bold;
@@ -146,7 +146,7 @@
 }
 .changecontent::after {
   content: " ";
-  color: #e86278;
+  color: #f195da;
   animation: changetext 10s infinite linear;
   font-weight: bold;
 }
@@ -175,7 +175,7 @@
 .content .btn {
   width: 110px;
   height: 38px;
-  background-color: #e86278;
+  background-color: #f195da;
   color: white;
 }
 @media screen and (max-width: 800px) {
@@ -261,13 +261,13 @@
   font-weight: bold;
 }
 .banner .content p {
-  color: #e86278;
+  color: #f195da;
 }
 #btnorder button {
   width: 150px;
   height: 32px;
   letter-spacing: 5px;
-  background-color: #e86278;
+  background-color: #f195da;
   color: white;
   border: none;
   border-radius: 5px;
@@ -307,12 +307,12 @@
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
-  color: #e86278;
+  color: #f195da;
   text-shadow: 1px 1px 1px black;
-  border-bottom: 2px solid #e86278;
+  border-bottom: 2px solid #f195da;
 }
 #product-cards .card {
-  background-color: #e86278;
+  background-color: #f195da;
   box-shadow: 0 0 3px black;
   border-radius: 5px;
   cursor: pointer;
@@ -362,13 +362,13 @@
   font-weight: bold;
 }
 #product-cards h6 span button {
-  color: #750013;
+  color: #38003e;
   width: 100px;
   height: 26px;
   font-size: 15px;
   background: transparent;
   letter-spacing: 3px;
-  border: 2px solid #e86278;
+  border: 2px solid #f195da;
   border-radius: 5px;
   float: right;
   font-weight: bold;
@@ -377,7 +377,7 @@
 }
 #product-cards h6 span button:hover {
   background-color: antiquewhite;
-  color: rgb(255, 44, 79);
+  color: #a68aa9;
 }
 
 /* product cards end */
@@ -390,9 +390,9 @@
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
-  color: #e86278;
+  color: #f195da;
   text-shadow: 1px 1px 1px black;
-  border-bottom: 2px solid #e86278;
+  border-bottom: 2px solid #f195da;
 }
 #gallary .card {
   box-shadow: 3px 3px 3px black;
@@ -419,16 +419,16 @@
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
-  color: #e86278;
+  color: #f195da;
   text-shadow: 1px 1px 1px black;
-  border-bottom: 2px solid #e86278;
+  border-bottom: 2px solid #f195da;
 }
 #about .card {
-  background-color: #e86278;
+  background-color: #f195da;
   box-shadow: 0px 0px 5px black;
 }
 #about p {
-  color: #e86278;
+  color: #f195da;
   word-spacing: 5px;
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 1px #fdc5ea;
@@ -438,7 +438,7 @@
   width: 150px;
   height: 32px;
   letter-spacing: 3px;
-  background-color: #e86278;
+  background-color: #f195da;
   color: white;
   border: none;
   cursor: pointer;
@@ -463,18 +463,18 @@
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
-  color: #e86278;
+  color: #f195da;
   text-shadow: 1px 1px 1px #fdc5ea;
-  border-bottom: 2px solid #e86278;
+  border-bottom: 2px solid #f195da;
 }
 #contact input {
-  background-color: #e86278;
+  background-color: #f195da;
 }
 #contact input::placeholder {
   color: white;
 }
 #contact textarea {
-  background-color: #e86278;
+  background-color: #f195da;
 }
 #contact textarea::placeholder {
   color: white;
@@ -488,15 +488,15 @@
   letter-spacing: 3px;
   font-weight: bold;
   background: transparent;
-  border: 2px solid #e86278;
-  color: #e86278;
+  border: 2px solid #f195da;
+  color: #f195da;
   transition: 0.5s;
   cursor: pointer;
 }
 #messagebtn button:hover {
   color: white;
   border: 2px solid white;
-  background-color: #e86278;
+  background-color: #f195da;
 }
 /* contact */
 
@@ -509,7 +509,7 @@
   display: flex;
   margin-top: 40px;
   justify-content: space-around;
-  background-color: #e86278;
+  background-color: #f195da;
   width: 100%;
   height: auto;
 }
@@ -615,7 +615,7 @@
   }
   #footer2 {
     width: 100%;
-    background-color: #e86278;
+    background-color: #f195da;
     box-shadow: 0px 0px 5px black;
     margin-top: 50px;
     padding-bottom: 50px;
@@ -629,7 +629,7 @@
   }
   .icons i {
     background-color: white;
-    color: #e86278;
+    color: #f195da;
     border-radius: 50px;
     padding: 6px;
     font-size: 30px;
@@ -637,7 +637,7 @@
     cursor: pointer;
   }
   .icons i:hover {
-    background-color: #e86278;
+    background-color: #f195da;
     color: white;
   }
   /* before */
@@ -691,7 +691,7 @@ html {
 }
 .arrow {
   position: fixed;
-  background-color: #e86278;
+  background-color: #f195da;
   border-radius: 50px;
   height: 50px;
   bottom: 40px;
