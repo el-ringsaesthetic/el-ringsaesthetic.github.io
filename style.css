@@ -431,7 +431,7 @@
   color: #e86278;
   word-spacing: 5px;
   letter-spacing: 1.5px;
-  text-shadow: 1px 1px 1px rgb(255, 211, 233);
+  text-shadow: 1px 1px 1px #fdc5ea;
   font-weight: bold;
 }
 #bt button {
@@ -464,7 +464,7 @@
   font-weight: bold;
   margin-top: 50px;
   color: #e86278;
-  text-shadow: 1px 1px 1px rgb(255, 211, 233);
+  text-shadow: 1px 1px 1px #fdc5ea;
   border-bottom: 2px solid #e86278;
 }
 #contact input {
